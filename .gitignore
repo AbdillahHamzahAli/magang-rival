@@ -1,0 +1,6 @@
+opencv/build
+02-ROS/turtle-ws/build
+Copy
+.vscode
+build
+.catkin_workspace

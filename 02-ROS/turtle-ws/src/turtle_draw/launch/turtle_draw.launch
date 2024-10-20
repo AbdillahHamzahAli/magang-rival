@@ -1,0 +1,10 @@
+<launch>
+  <!-- Node turtlesim_node harus berjalan terlebih dahulu -->
+  <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" output="screen" required="true"/>
+
+  <!-- Menambahkan penundaan sebelum node turtle_draw dimulai -->
+  <node pkg="roslaunch" type="sleep" args="5"/>
+
+  <!-- Node kedua untuk menggambar turtle -->
+  <node name="turtle_draw" pkg="turtle_draw" type="main" output="screen"/>
+</launch>
