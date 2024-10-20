@@ -3,6 +3,7 @@
 #include "TurtleDrawLetter.hpp"
 #include <map>
 #include <functional>
+#include <cctype>
 
 int main(int argc, char **argv) {
     ros::init(argc, argv, "main");
@@ -50,11 +51,12 @@ int main(int argc, char **argv) {
     drawMap["Z"] = std::bind(&TurtleDrawLetter::drawZ, &drawLetter);
 
     std::string input;
-    std::cout << "Masukkan huruf yang ingin digambar(max = 5): ";
+    std::cout << "Masukkan huruf yang ingin digambar(max = 5)(dalam uppercase): ";
     std::cin >> input;
     
     for(int i = 0; i < input.size(); i++){
-        drawMap[input.substr(i,1)]();
+        char str = toupper(input.substr(i,1));
+        drawMap[str]();
     }
     return 0;
 }
