@@ -1,0 +1,2 @@
+turtle_draw
+-DCATKIN_DEVEL_PREFIX=/home/anno/Desktop/magang-rival/02-ROS/turtle-ws/devel -DCMAKE_INSTALL_PREFIX=/home/anno/Desktop/magang-rival/02-ROS/turtle-ws/install -G Unix Makefiles

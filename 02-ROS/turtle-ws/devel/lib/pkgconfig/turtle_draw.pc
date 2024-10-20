@@ -1,0 +1,8 @@
+prefix=/home/anno/Desktop/magang-rival/02-ROS/turtle-ws/devel
+
+Name: turtle_draw
+Description: Description of turtle_draw
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
